@@ -8,6 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image x:Name="image" HorizontalAlignment="Left" Height="55" VerticalAlignment="Bottom" Width="50" Source="Assets/StoreLogo.png" RenderTransformOrigin="0.5,0.5" Margin="40,0,0,335"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="55" VerticalAlignment="Bottom" Width="50" Source="Assets/StoreLogo.png" RenderTransformOrigin="0.5,0.5" Margin="105,0,0,335"/>
+        <Image x:Name="image2" HorizontalAlignment="Left" Height="60" VerticalAlignment="Bottom" Width="50" Source="Assets/StoreLogo.png" RenderTransformOrigin="0.5,0.5" Margin="40,0,0,255"/>
+        <Image x:Name="image3" HorizontalAlignment="Left" Height="55" VerticalAlignment="Bottom" Width="50" Source="Assets/StoreLogo.png" RenderTransformOrigin="0.5,0.5" Margin="190,0,0,335"/>
+        <Image x:Name="image4" HorizontalAlignment="Left" Height="60" VerticalAlignment="Bottom" Width="50" Source="Assets/StoreLogo.png" RenderTransformOrigin="0.5,0.5" Margin="105,0,0,255"/>
+        <Image x:Name="image5" HorizontalAlignment="Left" Height="40" VerticalAlignment="Bottom" Width="50" Source="Assets/StoreLogo.png" RenderTransformOrigin="4.75,0.75" Margin="190,0,0,255"/>
 
     </Grid>
 </Page>
