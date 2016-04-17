@@ -71,7 +71,7 @@ namespace hqtestapp
             var beacons = _beaconManager.BluetoothBeacons.ToList().OrderByDescending(x => x.Rssi).ToList();
 
 
-            image.Visibility = Visibility.Collapsed;
+            image6.Visibility = Visibility.Collapsed;
             image1.Visibility = Visibility.Collapsed;
             image2.Visibility = Visibility.Collapsed;
             image3.Visibility = Visibility.Collapsed;
@@ -85,12 +85,12 @@ namespace hqtestapp
             //Debug.WriteLine("Beacons discovered so far\n-------------------------");
             foreach (var bluetoothBeacon in beacons)
             {
-                image.Visibility = Visibility.Collapsed;
                 image1.Visibility = Visibility.Collapsed;
                 image2.Visibility = Visibility.Collapsed;
                 image3.Visibility = Visibility.Collapsed;
                 image4.Visibility = Visibility.Collapsed;
                 image5.Visibility = Visibility.Collapsed;
+                image6.Visibility = Visibility.Collapsed;
 
 
                 ////if(bluetoothBeacon.BluetoothAddressAsString.StartsVith(GridStrings))
@@ -121,22 +121,22 @@ namespace hqtestapp
                 switch (im)
                 {
                     case 1:
-                        image.Visibility=Visibility.Visible;
+                        image1.Visibility=Visibility.Visible;
                         break;
                     case 2:
-                        image1.Visibility = Visibility.Visible;
-                        break;
-                    case 3:
                         image2.Visibility = Visibility.Visible;
                         break;
-                    case 4:
+                    case 3:
                         image3.Visibility = Visibility.Visible;
                         break;
-                    case 5:
+                    case 4:
                         image4.Visibility = Visibility.Visible;
                         break;
-                    case 6:
+                    case 5:
                         image5.Visibility = Visibility.Visible;
+                        break;
+                    case 6:
+                        image6.Visibility = Visibility.Visible;
                         break;
 
                 }
@@ -147,7 +147,7 @@ namespace hqtestapp
             }
         }
 
-        public string[] GridStrings = new string[] {"E1:E9", "EE:D9", "CA:C5", "F0:20", "CC:34", "F8:DD"};
+        public string[] GridStrings = new string[] { "F0:20", "CA:C5", "EE:D9", "D9:F0", "F8:DD", "CC:34" };
 
 
         private void button_Click(object sender, RoutedEventArgs e)
